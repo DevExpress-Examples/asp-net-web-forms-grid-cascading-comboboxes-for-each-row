@@ -1,6 +1,5 @@
 ﻿using System;
-using DevExpress.Web.ASPxGridView;
-using DevExpress.Web.ASPxEditors;
+using DevExpress.Web;
 using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page {
@@ -13,10 +12,10 @@ public partial class _Default : System.Web.UI.Page {
         ASPxComboBox cmbChild = (ASPxComboBox)sender;
         GridViewDataItemTemplateContainer templateContainer = (GridViewDataItemTemplateContainer)cmbChild.NamingContainer;
         cmbChild.ClientInstanceName = string.Format("cmbChild_{0}", templateContainer.VisibleIndex);
-        cmbChild.Callback += new DevExpress.Web.ASPxClasses.CallbackEventHandlerBase(cmbChild_Callback);
+        cmbChild.Callback += new DevExpress.Web.CallbackEventHandlerBase(cmbChild_Callback);
     }
 
-    void cmbChild_Callback(object sender, DevExpress.Web.ASPxClasses.CallbackEventArgsBase e) {
+    void cmbChild_Callback(object sender, DevExpress.Web.CallbackEventArgsBase e) {
         ASPxComboBox cmbChild = (ASPxComboBox)sender;
         AccessDataSource cmbChildAccessDataSource = (AccessDataSource)cmbChild.NamingContainer.FindControl("asdChild");
         cmbChildAccessDataSource.SelectParameters[0].DefaultValue = e.Parameter;
