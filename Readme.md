@@ -20,6 +20,20 @@ This example demonstrates how to create cascading combo boxes for each row of [A
 
 To implement the cascading behavior between a pair of [ASPxComboBox](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxComboBox) controls defined within the same row, editor settings are specifies dynamically in the `Itit` event.
 
+```csharp
+protected void cmbMaster_Init(object sender, EventArgs e) {
+    ASPxComboBox cmbParent = (ASPxComboBox)sender;
+    GridViewDataItemTemplateContainer templateContainer = (GridViewDataItemTemplateContainer)cmbParent.NamingContainer;
+    cmbParent.ClientSideEvents.SelectedIndexChanged = string.Format("function(s, e) {{ OnSelectedIndexChanged(s, e, {0}); }}", templateContainer.VisibleIndex);
+}
+protected void cmbChild_Init(object sender, EventArgs e) {
+    ASPxComboBox cmbChild = (ASPxComboBox)sender;
+    GridViewDataItemTemplateContainer templateContainer = (GridViewDataItemTemplateContainer)cmbChild.NamingContainer;
+    cmbChild.ClientInstanceName = string.Format("cmbChild_{0}", templateContainer.VisibleIndex);
+    cmbChild.Callback += new DevExpress.Web.CallbackEventHandlerBase(cmbChild_Callback);
+}
+```
+
 ## Documentation
 
 * [Access Controls in Templates on the Server](https://docs.devexpress.com/AspNet/403575/common-concepts/access-controls-in-templates-on-the-server)
