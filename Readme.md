@@ -13,11 +13,11 @@
 **[[Run Online]](https://codecentral.devexpress.com/e4395/)**
 <!-- run online end -->
 
-This example demonstrates how to create cascading combo boxes for each row of [ASPxGridview](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control.
+This example demonstrates how to create cascading combo boxes for each row of the [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control.
 
 ![](grid-with-cascading-comboboxes.png)
 
-To implement the cascading behavior between a pair of [ASPxComboBox](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxComboBox) controls defined within the same row, editor settings are specifies dynamically in the `Itit` event.
+To implement the cascading behavior between a pair of [ASPxComboBox](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxComboBox) controls defined within the same row, editor settings are specified dynamically in the `Init` event.
 
 ```csharp
 protected void cmbMaster_Init(object sender, EventArgs e) {
@@ -45,4 +45,4 @@ protected void cmbChild_Init(object sender, EventArgs e) {
 ## More Examples
 
 * [Combo Box for ASP.NET Web Forms - How to implement cascading combo boxes](https://github.com/DevExpress-Examples/asp-net-web-forms-cascading-comboboxes)
-* [How to refer to a client-side control encapsulated in certain instance of UserControl](https://github.com/DevExpress-Examples/how-to-refer-to-a-client-side-control-encapsulated-in-certain-instance-of-usercontrol-e2102)
+* [How to refer to a client-side control encapsulated in a specific instance of UserControl](https://github.com/DevExpress-Examples/how-to-refer-to-a-client-side-control-encapsulated-in-certain-instance-of-usercontrol-e2102)
