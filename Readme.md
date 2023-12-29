@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to implement cascading combo boxes in grid
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128541045/)**
-<!-- run online end -->
 
 This example demonstrates how to create cascading combo boxes for each row of the [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control.
 
