@@ -45,7 +45,7 @@ protected void cmbChild_Init(object sender, EventArgs e) {
 * [Combo Box for ASP.NET Web Forms - How to implement cascading combo boxes](https://github.com/DevExpress-Examples/asp-net-web-forms-cascading-comboboxes)
 * [How to refer to a client-side control encapsulated in a specific instance of UserControl](https://github.com/DevExpress-Examples/how-to-refer-to-a-client-side-control-encapsulated-in-certain-instance-of-usercontrol-e2102)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-cascading-comboboxes-for-each-row&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-cascading-comboboxes-for-each-row&~~~was_helpful=no)
 
